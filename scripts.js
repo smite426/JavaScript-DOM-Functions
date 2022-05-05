@@ -1,1 +1,3 @@
-alert("Does this work?");
+var paragraph = document.createElement('P');
+paragraph.textContent = 'The DOM is the bomb!';
+document.body.appendChild(paragraph);
