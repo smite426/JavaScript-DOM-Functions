@@ -10,8 +10,12 @@ div.style.height = '100vh';
 
 document.body.appendChild(div);
 
-div.appendChild(par)
+div.appendChild(par);
 
 div.addEventListener('mousemove', function(event) {
-    console.log(event)
+    console.log(event);
+    var x = event.clientX;
+    var y = event.clientY;
+    div.textContent = x + ', ' + y;
+    div.style.backgroundColor = 'rgb(' + x + ', ' + y + ', 100)';
 });
